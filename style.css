@@ -1,0 +1,205 @@
+:root {
+    --negro: #1a1a1a;
+    --gris-claro: #f5f5f5;
+    --gris: #666;
+    --arena: #d4c5b9;
+    --terracota: #c9967a;
+    --crema: rgb(249, 246, 242);
+    --rosa: #e4d9d348;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: var(--negro);
+    line-height: 1.8;
+    background: var(--crema);
+}
+
+.navbar {
+    background: transparent;
+    transition: background 0.3s;
+}
+
+.navbar.scrolled {
+    background: rgba(249, 246, 242, 0.95);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-weight: 300;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    white-space: normal;
+    max-width: 1280px;
+    line-height: 1.2;
+}
+
+.nav-link {
+    font-weight: 300;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    color: var(--negro) !important;
+}
+
+
+#inicio {
+    min-height: 115vh;
+
+background-image: 
+    linear-gradient(rgba(251, 245, 227, 0.865), rgba(0, 0, 0, 0.1)),  
+    url(./imagenes/pexels-rahimegul-9025367.jpg);
+background-size: cover;        
+background-position: center;   
+background-attachment: fixed;  
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 3.5rem;
+    letter-spacing: -1px;
+    line-height: 1.2;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 2rem;
+    letter-spacing: -0.5px;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 1.3rem;
+    letter-spacing: 0.5px;
+}
+
+.lead {
+    font-weight: 300;
+    color: var(--gris);
+}
+span {
+    color: #c9967a;
+}
+
+
+section {
+    padding: 120px 0;
+}
+
+
+.divider {
+    width: 60px;
+    height: 1px;
+    background: var(--terracota);
+    margin: 40px auto;
+}
+
+
+.minimal-list {
+    list-style: none;
+    padding: 0;
+}
+
+.minimal-list li {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--arena);
+    font-weight: 300;
+}
+
+.minimal-list li:last-child {
+    border-bottom: none;
+}
+
+
+.autor-card {
+    min-height: 300px;   
+    background-size: cover;
+    background-position: center;
+    background-color: white;
+    transition: all ease 0.3s;
+    background-blend-mode: lighten;
+}
+
+.autor-card:hover {
+    border-color: var(--terracota) !important;
+    transform: translateY(-2px);
+    background-blend-mode: screen; 
+    background-color: rgba(215, 211, 211, 0.957); 
+}
+#contacto{
+    background-color:var(--rosa);
+}
+
+#modalidad{
+    background-color: var(--gris-claro);
+}
+
+
+.btn-minimal {
+    background: var(--crema);
+    color: var(--negro);
+    padding: 12px 40px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 0.85rem;
+    transition: all 0.3s;
+}
+
+.btn-minimal:hover {
+    background: var(--terracota);
+    border-color: var(--negro);
+    color: white
+}
+
+
+.conceptos {
+    display: inline-block;
+    padding: 8px 16px;
+    background: var(--crema);
+    border: 1px solid var(--arena);
+    font-size: 0.85rem;
+    color: var(--negro);
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin: 5px;
+    transition: ease-in 0.1s;
+}
+.conceptos:hover {
+    background-color: var(--terracota)
+}
+#autores{
+    background-color:var(--rosa);
+}
+
+.form-control {
+            background: transparent;
+            font-weight: 300;
+            font-size: 0.95rem;
+            padding: 10px 0;
+            transition: border-color 0.3s;
+}
+        
+.form-control:focus {
+            background: transparent;
+            border-color: var(--terracota) !important;
+            box-shadow: none;
+}
+        
+.form-control::placeholder {
+            color: var(--gris);
+            opacity: 0.6;
+}
+        
+.form-label {
+            font-size: 0.8rem;
+            color: var(--gris);
+            margin-bottom: 8px;
+}
+
+footer {
+    border-top: 1px solid var(--arena);
+    padding: 60px 0 40px;
+    font-weight: 300;
+    font-size: 0.9rem;
+    color: var(--gris);
+    background: var(--crema);
+}
