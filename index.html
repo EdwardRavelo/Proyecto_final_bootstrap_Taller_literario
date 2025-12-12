@@ -298,6 +298,7 @@
                         <input type="text" 
                                class="form-control border-0 border-bottom rounded-0 px-0" 
                                id="nombre" 
+                               name="nombre"
                                placeholder="Tu nombre completo"
                                required>
                     </div>
@@ -308,6 +309,7 @@
                         <input type="email" 
                                class="form-control border-0 border-bottom rounded-0 px-0" 
                                id="email" 
+                               name="email"
                                placeholder="tu@email.com"
                                required>
                     </div>
@@ -318,6 +320,7 @@
                         <input type="tel" 
                                class="form-control border-0 border-bottom rounded-0 px-0" 
                                id="whatsapp" 
+                               name="whatsapp"
                                placeholder="+54 11 XXXX-XXXX">
                     </div>
                     
@@ -326,10 +329,14 @@
                         <label for="mensaje" class="form-label fw-light" style="letter-spacing: 1px;">MENSAJE</label>
                         <textarea class="form-control border-0 border-bottom rounded-0 px-0" 
                          id="mensaje" 
+                         name="mensaje"
                          rows="4" 
                          placeholder="Contame un poco sobre vos, qué te gusta leer y por qué te interesa el taller... o loque quieras"
                          required></textarea>
                     </div>
+
+                        <input type="hidden" name="_subject" value="Nueva consulta - Taller de lectura">
+
                     
                 
                     <div class="text-center mt-5">
